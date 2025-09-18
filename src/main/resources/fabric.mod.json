@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "yummyid",
+	"version": "${version}",
+	"name": "Yummy Mod",
+	"description": "A mod for learning",
+	"authors": [
+		"Yummyramen2011"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/yummyid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yummyramen2011.themod.YummyMod"
+		],
+		"fabric-datagen": [
+			"net.yummyramen2011.themod.YummyModDataGenerator"
+		],
+		"client": [
+			"net.yummyramen2011.themod.YummyModClient"
+		]
+	},
+	"mixins": [
+		"yummyid.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
